@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:text="Hello World!"
+    android:textSize="50sp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:l       ayout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cornerRadius="10dp">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/cat" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="Введите имя"
+            android:textColorHint="@color/blue" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:hint="Пароль"
+            android:textColorHint="@color/blue" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textColor="@color/blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/red"
+            android:text="Вход"
+            android:layout_marginTop="36dp"
+            app:cornerRadius="9dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
